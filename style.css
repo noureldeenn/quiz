@@ -1,0 +1,161 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #333;
+}
+
+.login-container,
+.home-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px; /* Maximum width for larger screens */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3e99e1;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Home page styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 15%;
+  justify-content: center;
+  gap: 50px;
+  padding-block: 100px;
+}
+.container a {
+  width: 25%;
+}
+.home-container {
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #555;
+}
+
+.quiz-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+#options {
+  margin-top: 20px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #0056b3;
+}
+
+#timer {
+  margin-top: 20px;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-container,
+  .home-container {
+    padding: 20px;
+  }
+  .container a {
+    width: 100%;
+  }
+}
